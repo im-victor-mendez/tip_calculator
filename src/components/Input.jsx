@@ -5,9 +5,17 @@ import '../styles/Input.scss'
 function Input(props) {
   return (
     <div className='input'>
-        <h1 id='name'>{props.name}</h1>
-        <input type={props.type} />
-        <i id='icon' className='material-symbols-outlined'>{props.icon}</i>
+      {
+        props.name != undefined ?
+        <h1 id='name'>{props.name}</h1> :
+        <></>
+      }
+        <input type={props.type} placeholder={props.placeholder} />
+        {
+          props.icon != undefined ?
+          <i id='icon' className='material-symbols-outlined'>{props.icon}</i> :
+          <></>
+        }
     </div>
   )
 }

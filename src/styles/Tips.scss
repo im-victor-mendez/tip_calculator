@@ -1,0 +1,19 @@
+.percentage {
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    background-color: var(--background-percentage);
+    height: 24px;
+}
+
+#tips {
+    display: grid;
+    grid-template-columns: auto auto 33%;
+    gap: 5px;
+
+    Input {
+        width: 100%;
+        text-align: center;
+    }
+}
