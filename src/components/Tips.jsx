@@ -11,8 +11,11 @@ function Percentage(props) {
   const dispatch = useDispatch()
 
   return (
-    <button
-    className='percentage'
+    <input
+    type='radio'
+    name='input-percentage'
+    id={`radio-${props.id}`}
+    className='input-percentage'
     value={props.percentage}
     onClick={
       event => dispatch(
@@ -23,9 +26,7 @@ function Percentage(props) {
           }
         )
       )
-    }>
-        {props.percentage}%
-    </button>
+    }/>
   )
 }
 
@@ -37,7 +38,12 @@ function Tips(props) {
       <section id="percentages">
         {
           percentages.map(
-            percentage => <Percentage key={`key-Percentage-${percentage}`} percentage={percentage} />
+            (percentage, i) => <Percentage id={i} key={`key-Percentage-${percentage}`} percentage={percentage} />
+          )
+        }
+        {
+          percentages.map(
+            (percentage, i) => <label id={`percentage-${i}`} className='percentage' htmlFor={`radio-${i}`}>{percentage}%</label>
           )
         }
         <Input id='tip' type='number' placeholder='Custom' />

@@ -6,8 +6,7 @@
     background-color: var(--background-percentage);
     height: 24px;
 
-    &:hover/*,
-    &:active*/ {
+    &:hover {
         background-color: var(--hover-background-percentage);
         color: var(--background-percentage);
     }
@@ -29,4 +28,29 @@
             text-align: center;
         }
     }
+}
+
+.input-percentage {
+    display: none;
+}
+
+input#radio-0:checked ~ .percentage#percentage-0 {
+    background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
+}
+input#radio-1:checked ~ .percentage#percentage-1 {
+    background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
+}
+input#radio-2:checked ~ .percentage#percentage-2 {
+    background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
+}
+input#radio-3:checked ~ .percentage#percentage-3 {
+    background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
+}
+input#radio-4:checked ~ .percentage#percentage-4 {
+    background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
 }
