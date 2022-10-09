@@ -32,7 +32,7 @@ function Result(props) {
             <h1 id='name'>{props.name}</h1>
             <p id='subname'>{props.subname}</p>
         </div>
-        <h2 id='result'>{props.result}</h2>
+        <h2 id='result'>${props.result}</h2>
     </div>
   )
 }
