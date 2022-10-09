@@ -4,7 +4,7 @@ import '../styles/Board.scss'
 /* props = id, view */
 function Board(props) {
   return (
-    <section id={props.id} className='board'>
+    <section /*key={props.id}*/ id={props.id} className='board'>
         {props.view}
     </section>
   )

@@ -42,7 +42,7 @@ function Results() {
         <section id="results">
             {
                 results.map(
-                    result => <Result id={result.id} name={result.name} subname={result.subname} result={result.result} />
+                    result => <Result key={`key-Result-${result.name}`} id={result.id} name={result.name} subname={result.subname} result={result.result} />
                 )
             }
         </section>

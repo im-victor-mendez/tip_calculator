@@ -21,7 +21,7 @@ function Tips(props) {
       <section id="percentages">
         {
           percentages.map(
-            percentage => <Percentage percentage={percentage} />
+            percentage => <Percentage key={`key-Percentage-${percentage}`} percentage={percentage} />
           )
         }
         <Input type='number' placeholder='Custom' />
