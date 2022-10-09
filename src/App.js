@@ -14,7 +14,7 @@ const view = [
   <section id='set-data'>
     <Input id='bill' name='Bill' type='number' icon='Attach_Money' />
     <Tips name='Select Tip %' />
-    <Input id='numberOfPeople' name='Number of People' type='number' icon='Person' />
+    <Input id='numberOfPeople' name='Number of People' type='number' icon='Person' placeholder='Minimun of 1' />
   </section>,
   <Board id='results-board' view={viewResults} />
 ]

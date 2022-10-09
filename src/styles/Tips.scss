@@ -5,6 +5,12 @@
     text-align: center;
     background-color: var(--background-percentage);
     height: 24px;
+
+    &:hover/*,
+    &:active*/ {
+        background-color: var(--hover-background-percentage);
+        color: var(--background-percentage);
+    }
 }
 
 #tips {

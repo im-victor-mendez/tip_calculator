@@ -13,8 +13,18 @@ function Input(props) {
         <h1 id='name'>{props.name}</h1> :
         <></>
       }
-        <input
+
+      <input
+        id={`input-${props.id}`}
         type={props.type}
+        min={
+          props.id == 'numberOfPeople' ?
+          1 : 0
+        }
+        required={
+          props.id == 'numberOfPeople' ?
+          true : false
+        }
         placeholder={
           props.type == 'number' && props.placeholder == undefined ?
           '0' :
@@ -30,6 +40,7 @@ function Input(props) {
             )
           )
         } />
+        
         {
           props.icon != undefined ?
           <i id='icon' className='material-symbols-outlined'>{props.icon}</i> :

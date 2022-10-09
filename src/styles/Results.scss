@@ -1,3 +1,8 @@
+#results {
+    display: grid;
+    gap: 25px;
+}
+
 #results-board {
     background-color: var(--background-results);
     width: auto;
@@ -7,6 +12,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 25px;
     }
 
     .text {
@@ -24,6 +30,7 @@
     }
 
     #result {
+        margin: 0%;
         color: var(--color-results);
     }
 }

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let bill = 0, tip = 0, numberOfPeople = 0, totalAmount = bill * (tip / 10), tipAmount = totalAmount/numberOfPeople
+let bill = 0, tip = 0, numberOfPeople = 1, totalAmount = bill * (tip / 10), tipAmount = totalAmount/numberOfPeople
 
 const initialState = {
     totalAmount,

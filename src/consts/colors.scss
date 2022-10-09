@@ -7,10 +7,13 @@
 
     /* Input */
     --background-input: #F3F8FB;
+    --borderColor-input: #97C5BF;
     --color-input: #B4C4C3;
+    --borderColor-input-invalid: #D8A6A7;
 
     /* Percentage */
     --background-percentage: #00474B;
+    --hover-background-percentage: #9EE8DE;
 
     /* Results */
     --background-results: #00474B;
@@ -19,4 +22,6 @@
 
     /* Reset */
     --background-reset: #0D686D;
+    --color-reset: #165F59;
+    --hover-background-reset: #9EE8DE;
 }
