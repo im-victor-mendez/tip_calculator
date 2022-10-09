@@ -5,7 +5,8 @@ import Tips from './components/Tips';
 
 const view = [
   <Input name='Bill' type='number' icon='Attach_Money' />,
-  <Tips />
+  <Tips />,
+  <Input name='Number of People' type='number' icon='Person' />
 ]
 
 function App() {
@@ -16,12 +17,6 @@ function App() {
         <h1>TTER</h1>
       </div>
       <Board view={view} />
-      {/*
-        <Percentage />
-      */}
-      {
-        
-      }
     </section>
   );
 }
