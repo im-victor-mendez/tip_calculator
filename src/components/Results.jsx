@@ -20,9 +20,6 @@ function Results() {
 
     const tipAmount = state.tipAmount
     const totalAmount = state.totalAmount
-    const bill = state.bill
-    const tip = state.tip
-    const numberOfPeople = state.numberOfPeople
 
     const results = [
         /*
@@ -44,24 +41,6 @@ function Results() {
             id: 'total',
             subname: '',
             result: totalAmount
-        },
-        {
-            name: 'Bill',
-            id: 'bill',
-            subname: 'billReduxState',
-            result: bill
-        },
-        {
-            name: 'Tip',
-            id: 'tip',
-            subname: 'tipReduxState',
-            result: tip
-        },
-        {
-            name: 'Numer of People',
-            id: 'numberOfPeople',
-            subname: 'numberOfPeopleReduxState',
-            result: numberOfPeople
         }
     ]
 
@@ -69,7 +48,12 @@ function Results() {
         <section id="results">
             {
                 results.map(
-                    result => <Result key={`key-Result-${result.name}`} id={result.id} name={result.name} subname={result.subname} result={result.result} />
+                    result => <Result
+                    key={`key-Result-${result.name}`}
+                    id={result.id}
+                    name={result.name}
+                    subname={result.subname}
+                    result={result.result} />
                 )
             }
         </section>
