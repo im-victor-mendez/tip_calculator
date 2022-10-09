@@ -24,7 +24,7 @@ function Tips(props) {
             percentage => <Percentage key={`key-Percentage-${percentage}`} percentage={percentage} />
           )
         }
-        <Input type='number' placeholder='Custom' />
+        <Input id='tip' type='number' placeholder='Custom' />
       </section>
     </div>
   )

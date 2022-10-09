@@ -10,9 +10,9 @@ const viewResults = [
 
 const view = [
   <section id='set-data'>
-    <Input name='Bill' type='number' icon='Attach_Money' />
+    <Input id='bill' name='Bill' type='number' icon='Attach_Money' />
     <Tips name='Select Tip %' />
-    <Input name='Number of People' type='number' icon='Person' />
+    <Input id='numberOfPeople' name='Number of People' type='number' icon='Person' />
   </section>,
   <Board id='results-board' view={viewResults} />
 ]

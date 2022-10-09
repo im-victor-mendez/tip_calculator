@@ -1,8 +1,12 @@
-import React from 'react'
+//import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setValue } from '../stateManagement/calculationSlice'
 import '../styles/Input.scss'
 
-/* props = name, type, placeholder, icon */
+/* props = id (to use in calculationSlice), name, type, placeholder, icon */
 function Input(props) {
+  //const [value, setValue] = useState(0)
+  const dispatch = useDispatch()
 
   return (
     <div className='input'>
@@ -15,6 +19,15 @@ function Input(props) {
           props.type == 'number' && props.placeholder == undefined ?
           '0' :
           props.placeholder
+        } onChange={
+          event => dispatch(
+            setValue(
+              {
+                id: props.id,
+                value: event.target.value
+              }
+            )
+          )
         } />
         {
           props.icon != undefined ?

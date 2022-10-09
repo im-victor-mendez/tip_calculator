@@ -1,28 +1,6 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import '../styles/Results.scss'
-
-const results = [
-    /*
-    {
-        name: '',
-        id: '',
-        subname: '',
-        result: '(reduxStore)'
-    }
-    */
-    {
-        name: 'Tip Amount',
-        id: 'tipAmount',
-        subname: '/ person',
-        result: '(reduxStore)'
-    },
-    {
-        name: 'Total',
-        id: 'total',
-        subname: '/ person',
-        result: '(reduxStore)'
-    }
-]
 
 /* props = id, name, subname, result */
 function Result(props) {
@@ -38,6 +16,55 @@ function Result(props) {
 }
 
 function Results() {
+    const state = useSelector(state => state.tipValue)
+
+    const tipAmount = state.tipAmount
+    const totalAmount = state.totalAmount
+    const bill = state.bill
+    const tip = state.tip
+    const numberOfPeople = state.numberOfPeople
+
+    const results = [
+        /*
+        {
+            name: '',
+            id: '',
+            subname: '',
+            result: '(reduxStore)'
+        }
+        */
+        {
+            name: 'Tip Amount',
+            id: 'tipAmount',
+            subname: '/ person',
+            result: tipAmount
+        },
+        {
+            name: 'Total',
+            id: 'total',
+            subname: '',
+            result: totalAmount
+        },
+        {
+            name: 'Bill',
+            id: 'bill',
+            subname: 'billReduxState',
+            result: bill
+        },
+        {
+            name: 'Tip',
+            id: 'tip',
+            subname: 'tipReduxState',
+            result: tip
+        },
+        {
+            name: 'Numer of People',
+            id: 'numberOfPeople',
+            subname: 'numberOfPeopleReduxState',
+            result: numberOfPeople
+        }
+    ]
+
     return (
         <section id="results">
             {
