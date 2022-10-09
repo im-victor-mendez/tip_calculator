@@ -1,4 +1,6 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { setValue } from '../stateManagement/calculationSlice'
 import '../styles/Tips.scss'
 import Input from './Input'
 
@@ -6,8 +8,22 @@ const percentages = [5, 10, 15, 25, 50]
 
 /* props = percentage */
 function Percentage(props) {
+  const dispatch = useDispatch()
+
   return (
-    <button className='percentage' value={props.percentage} /*onClick={event => setPercentage(event.target.value)}*/>
+    <button
+    className='percentage'
+    value={props.percentage}
+    onClick={
+      event => dispatch(
+        setValue(
+          {
+            id: 'tip',
+            value: event.target.value
+          }
+        )
+      )
+    }>
         {props.percentage}%
     </button>
   )
