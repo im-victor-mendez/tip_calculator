@@ -13,15 +13,19 @@ function Percentage(props) {
   )
 }
 
-function Tips() {
+/* props = name */
+function Tips(props) {
   return (
     <div id='tips'>
-      {
-        percentages.map(
-          percentage => <Percentage percentage={percentage} />
-        )
-      }
-      <Input type='number' placeholder='Custom' />
+      <h1 id='name'>{props.name}</h1>
+      <section id="percentages">
+        {
+          percentages.map(
+            percentage => <Percentage percentage={percentage} />
+          )
+        }
+        <Input type='number' placeholder='Custom' />
+      </section>
     </div>
   )
 }

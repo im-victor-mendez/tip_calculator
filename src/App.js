@@ -9,9 +9,11 @@ const viewResults = [
 ]
 
 const view = [
-  <Input name='Bill' type='number' icon='Attach_Money' />,
-  <Tips />,
-  <Input name='Number of People' type='number' icon='Person' />,
+  <section id='setData'>
+    <Input name='Bill' type='number' icon='Attach_Money' />
+    <Tips name='Select Tip %' />
+    <Input name='Number of People' type='number' icon='Person' />
+  </section>,
   <Board id='results-board' view={viewResults} />
 ]
 
@@ -22,7 +24,7 @@ function App() {
         <h1>SPLI</h1>
         <h1>TTER</h1>
       </div>
-      <Board view={view} />
+      <Board id='app-board' view={view} />
     </section>
   );
 }

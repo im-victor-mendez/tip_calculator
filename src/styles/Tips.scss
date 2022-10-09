@@ -8,12 +8,20 @@
 }
 
 #tips {
-    display: grid;
-    grid-template-columns: auto auto 33%;
-    gap: 5px;
+    #name {
+        margin: 0%;
+        /* To change var name */
+        color: var(--color-input-name);
+    }
 
-    Input {
-        width: 100%;
-        text-align: center;
+    #percentages {
+        display: grid;
+        grid-template-columns: auto auto 33%;
+        gap: 5px;
+
+        Input {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
