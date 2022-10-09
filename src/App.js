@@ -1,11 +1,13 @@
 import './App.scss';
 import Board from './components/Board';
 import Input from './components/Input';
+import Reset from './components/Reset';
 import Results from './components/Results';
 import Tips from './components/Tips';
 
 const viewResults = [
-  <Results />
+  <Results />,
+  <Reset />
 ]
 
 const view = [
