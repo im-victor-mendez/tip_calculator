@@ -3,7 +3,7 @@
   height: 100vh;
   background-color: var(--background-app);
 
-  display: grid; /* To check */
+  display: grid;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -17,5 +17,10 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px;
+
+    #set-data {
+      display: grid;
+      align-items: center;
+    }
   }
 }
