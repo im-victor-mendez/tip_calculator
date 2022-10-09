@@ -1,0 +1,27 @@
+#results-board {
+    background-color: var(--background-results);
+
+    .result-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text {
+        * {
+            margin: 0%;
+        }
+
+        #name {
+            color: white;
+        }
+
+        #subname {
+            color: var(--color-subname);
+        }
+    }
+
+    #result {
+        color: var(--color-results);
+    }
+}

@@ -5,5 +5,11 @@
 
   display: grid; /* To check */
   align-items: center;
+  align-content: center;
   justify-content: center;
+
+  #title {
+    text-align: center;
+    color: var(--color-title);
+  }
 }

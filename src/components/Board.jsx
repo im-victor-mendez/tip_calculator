@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/Board.scss'
 
-/* props = view */
+/* props = id, view */
 function Board(props) {
   return (
-    <section className='board'>
+    <section id={props.id} className='board'>
         {props.view}
     </section>
   )

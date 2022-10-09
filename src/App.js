@@ -1,12 +1,18 @@
 import './App.scss';
 import Board from './components/Board';
 import Input from './components/Input';
+import Results from './components/Results';
 import Tips from './components/Tips';
+
+const viewResults = [
+  <Results />
+]
 
 const view = [
   <Input name='Bill' type='number' icon='Attach_Money' />,
   <Tips />,
-  <Input name='Number of People' type='number' icon='Person' />
+  <Input name='Number of People' type='number' icon='Person' />,
+  <Board id='results-board' view={viewResults} />
 ]
 
 function App() {
