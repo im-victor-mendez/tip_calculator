@@ -29,6 +29,11 @@ Users should be able to:
 
 ![](./src/media/Overview.jpeg)
 
+## Video
+
+The video size is too big 😫.
+You can view it in ./scr/media/Overview.mp4.
+
 ### Links
 
 - Solution URL: [GitHub](https://github.com/im-victor-mendez/React-Tip_Calculator)
