@@ -1,0 +1,41 @@
+@media (max-width: 375px) {
+    .App {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-items: center;
+
+        #app-board {
+            width: 85vw;
+            height: 100%;
+
+            border-radius: 25px 25px 0px 0px;
+
+            grid-template-columns: auto;
+
+            #set-data {
+                #tips {
+                    #percentages {
+                        justify-content: center;
+                        grid-template-columns: 45% 45%;
+
+                        label,
+                        .input {
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+
+            #results-board {
+                gap: 25px;
+                #reset {
+                    background-color: var(--hover-background-reset);
+                }
+            }
+        }
+    }
+}

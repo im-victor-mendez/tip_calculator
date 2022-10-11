@@ -1,4 +1,5 @@
 import './App.scss';
+import './Mobile.scss'
 import Board from './components/Board';
 import Input from './components/Input';
 import Reset from './components/Reset';
