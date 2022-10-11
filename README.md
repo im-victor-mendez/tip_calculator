@@ -7,12 +7,12 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Video](#video)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 # Overview
@@ -31,8 +31,7 @@ Users should be able to:
 
 ## Video
 
-The video size is too big 😫.
-You can view it in ./scr/media/Overview.mp4.
+https://user-images.githubusercontent.com/106124660/195153444-1d75239a-1b07-4879-84ab-406633790702.mp4
 
 ### Links
 
