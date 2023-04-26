@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/106124660/195153444-1d75239a-1b07-4879
 ### Links
 
 - Solution URL: [GitHub](https://github.com/im-victor-mendez/React-Tip_Calculator)
-- Live Site URL: [Pending]()
+- Live Site URL: [Netlify](https://storied-bombolone-54aefb.netlify.app/)
 
 ## My process
 
