@@ -21,9 +21,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size.
-- See hover states for all interactive elements on the page.
-- Calculate the correct tip and total cost of the bill person.
+- [x] View the optimal layout for the app depending on their device's screen size.
+- [x] See hover states for all interactive elements on the page.
+- [x] Calculate the correct tip and total cost of the bill person.
 
 ## Screenshot
 
@@ -36,19 +36,18 @@ https://user-images.githubusercontent.com/106124660/195153444-1d75239a-1b07-4879
 ### Links
 
 - Solution URL: [GitHub](https://github.com/im-victor-mendez/React-Tip_Calculator)
-- Live Site URL: [Netlify](https://storied-bombolone-54aefb.netlify.app/)
+- Live Site URL: [Netlify](https://im-victor-mendez-tip-calculator.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- React JS
+- [React JS](https://reactjs.org/)
 - Redux
 - JavaScript
 - Semantic HTML5 markup
 - In process to add animations with Framer Motion 💕.
 - SCSS custom properties
-- [React](https://reactjs.org/) - JS library
 
 ### What I learned
 
@@ -60,8 +59,6 @@ https://user-images.githubusercontent.com/106124660/195153444-1d75239a-1b07-4879
     ...
   }
   ```
-
-**Note: If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.**
 
 ### Continued development
 
