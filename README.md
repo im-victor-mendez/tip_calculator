@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/106124660/195153444-1d75239a-1b07-4879
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/im-victor-mendez/React-Tip_Calculator)
+- Solution URL: [GitHub](https://github.com/im-victor-mendez/tip_calculator)
 - Live Site URL: [Netlify](https://im-victor-mendez-tip-calculator.netlify.app/)
 
 ## My process
